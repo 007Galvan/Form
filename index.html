@@ -22,7 +22,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-              <form>
+              <form  data-netlify-recaptcha="true"
+              data-netlify="true">
                 <label for="Nombre"> Nombre:  </label> <br>
                 <input type="text" name="name" id="name" required/>
                 <br>
@@ -43,7 +44,8 @@
                 <input type="checkbox" name="pasatiempos" id="pt1" required/>Series <br>  
                 <input type="checkbox" name="pasatiempos" id="pt1" required/>Peliculas
                 <br> <br>
-                <div class="g-recaptcha" data-sitekey="6LfyAgolAAAAAKVUVWbAn6YjF3SeN93hKEO5qPj1" data-callback="correctCaptcha"></div>
+                <!-- <div class="g-recaptcha" data-sitekey="6LfyAgolAAAAAKVUVWbAn6YjF3SeN93hKEO5qPj1" data-callback="correctCaptcha"></div> -->
+                <div data-netlify-recaptcha="true"></div>
                 <input type="button" value="Limpiar" onclick="limpiar()">
                 <input type="button" value="Enviar" onclick="agregar()">
 
